@@ -1,0 +1,7 @@
+port: ":3000"
+database:
+  url: "postgres://${DB_USER}:${DB_PASS}@account_database:5432/account_database"
+  max_connections: 10
+kafka:
+  broker_url: "${KAFKA_BROKER_URL}"
+  topic: "transactions"
